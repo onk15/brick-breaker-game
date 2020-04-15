@@ -5,7 +5,6 @@ Cześć Szymon, programujesz
  */
 package gra_odbijacz;
 
-import java.awt.BorderLayout;
 import java.awt.Image;
 import java.awt.Rectangle;
 import java.util.ArrayList;
@@ -33,46 +32,42 @@ String name;
 
 public void ustawKwadraty(Kwadracik  kwadrat, JPanel panel)
 {
-Rectangle układ = panel.getBounds();
-kwadrat.y = Kwadracik.ZETKA_Y;
-Kwadracik.ZETKA_X = (kwadrat.x + dx) + Kwadracik.ZETKA_X;
-kwadrat.x += Kwadracik.ZETKA_X;
+        Rectangle układ = panel.getBounds();
+        kwadrat.y = Kwadracik.ZETKA_Y;
+        Kwadracik.ZETKA_X = (kwadrat.x + dx) + Kwadracik.ZETKA_X;
+        kwadrat.x += Kwadracik.ZETKA_X;
 
-if(kwadrat.x >= układ.getMaxX() - 50)
-{
-kwadrat.x =0;
-Kwadracik.ZETKA_X =0;
-kwadrat.y += dy;
-Kwadracik.ZETKA_Y = kwadrat.y;
+    if(kwadrat.x >= układ.getMaxX() - 50)
+    {
+        kwadrat.x =0;
+        Kwadracik.ZETKA_X =0;
+        kwadrat.y += dy;
+        Kwadracik.ZETKA_Y = kwadrat.y;
 
 
-Kwadracik.ZETKA_X = (kwadrat.x + dx) + Kwadracik.ZETKA_X;
-kwadrat.x += Kwadracik.ZETKA_X;
-}
+        Kwadracik.ZETKA_X = (kwadrat.x + dx) + Kwadracik.ZETKA_X;
+        kwadrat.x += Kwadracik.ZETKA_X;
+    }
 }
 public void ustawKwadraty2 (ArrayList listaKwadartów, JPanel panel)
 {
-Rectangle układ = panel.getBounds();
-for(int i =0; i< listaKwadartów.size();i++)
-{    
+    Rectangle układ = panel.getBounds();
+    for(int i =0; i< listaKwadartów.size();i++)
+    {
+        
+    ((Kwadracik)listaKwadartów.get(i)).y = Kwadracik.ZETKA_Y;
+    Kwadracik.ZETKA_X = (((Kwadracik)listaKwadartów.get(i)).x + dx) + Kwadracik.ZETKA_X;
+    ((Kwadracik)listaKwadartów.get(i)).x += Kwadracik.ZETKA_X;
 
-
-((Kwadracik)listaKwadartów.get(i)).y = Kwadracik.ZETKA_Y;
-Kwadracik.ZETKA_X = (((Kwadracik)listaKwadartów.get(i)).x + dx) + Kwadracik.ZETKA_X;
-((Kwadracik)listaKwadartów.get(i)).x += Kwadracik.ZETKA_X;
-
-if(((Kwadracik)listaKwadartów.get(i)).x >= układ.getMaxX() - 50)
-{
-((Kwadracik)listaKwadartów.get(i)).x =0;
-Kwadracik.ZETKA_X =0;
-((Kwadracik)listaKwadartów.get(i)).y += dy;
-Kwadracik.ZETKA_Y = ((Kwadracik)listaKwadartów.get(i)).y;
-
-
-
-Kwadracik.ZETKA_X = (((Kwadracik)listaKwadartów.get(i)).x + dx) + Kwadracik.ZETKA_X;
-((Kwadracik)listaKwadartów.get(i)).x += Kwadracik.ZETKA_X;
-}
+    if(((Kwadracik)listaKwadartów.get(i)).x >= układ.getMaxX() - 50)
+    {
+        ((Kwadracik)listaKwadartów.get(i)).x =0;
+        Kwadracik.ZETKA_X =0;
+        ((Kwadracik)listaKwadartów.get(i)).y += dy;
+        Kwadracik.ZETKA_Y = ((Kwadracik)listaKwadartów.get(i)).y;
+        Kwadracik.ZETKA_X = (((Kwadracik)listaKwadartów.get(i)).x + dx) + Kwadracik.ZETKA_X;
+        ((Kwadracik)listaKwadartów.get(i)).x += Kwadracik.ZETKA_X;
+    }
 }
 
 
@@ -82,42 +77,37 @@ Kwadracik.ZETKA_X = (((Kwadracik)listaKwadartów.get(i)).x + dx) + Kwadracik.ZET
 
 public void ustawKwadraty3(Kwadracik  kwadrat, JPanel panel)
 {
-Rectangle układ = panel.getBounds();
-kwadrat.y = Kwadracik.ZETKA_Y;
-Kwadracik.ZETKA_X = (kwadrat.x + dx) + Kwadracik.ZETKA_X;
-kwadrat.x += Kwadracik.ZETKA_X;
+        Rectangle układ = panel.getBounds();
+        kwadrat.y = Kwadracik.ZETKA_Y;
+        Kwadracik.ZETKA_X = (kwadrat.x + dx) + Kwadracik.ZETKA_X;
+        kwadrat.x += Kwadracik.ZETKA_X;
 
-if(kwadrat.x >= układ.getMaxX() - 50)
-{
-kwadrat.x =0;
-Kwadracik.ZETKA_X =0;
-kwadrat.y += dy;
-Kwadracik.ZETKA_Y = kwadrat.y;
-
-
-Kwadracik.ZETKA_X = (kwadrat.x + dx) + Kwadracik.ZETKA_X;
-kwadrat.x += Kwadracik.ZETKA_X;
+    if(kwadrat.x >= układ.getMaxX() - 50)
+    {
+        kwadrat.x =0;
+        Kwadracik.ZETKA_X =0;
+        kwadrat.y += dy;
+        Kwadracik.ZETKA_Y = kwadrat.y;
+        Kwadracik.ZETKA_X = (kwadrat.x + dx) + Kwadracik.ZETKA_X;
+        kwadrat.x += Kwadracik.ZETKA_X;
+    }
 
 }
-}
 
-
-
-    
     public String toString () 
     {  
-    return name;
+        return name;
     }
 
     public int returnX()
     {
-    return x;
+        return x;
     }
     
     public int powiększX()
     {
-    x+=20;
-    return x;
+        x+=20;
+        return x;
     }
         
 }
