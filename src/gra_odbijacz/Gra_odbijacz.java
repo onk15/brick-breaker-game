@@ -61,16 +61,6 @@ public class Gra_odbijacz extends JFrame {
             start_btn.requestFocus();
             }
         });
-       
-       
-      
-       
-       //wynik.setSize(500, 300);
-       
-//       wynik.setText("Wynik: " + Gra_odbijacz.WYNIK);
-//       
-//       animacja.add(wynik);
-//       repaint();
     }
     
     public void dodajKulke()
