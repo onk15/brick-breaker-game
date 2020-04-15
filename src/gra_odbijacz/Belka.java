@@ -22,8 +22,7 @@ import javax.swing.plaf.basic.BasicComboBoxUI;
  */
 public class Belka 
 {        
-    //Belka belka = this;
-
+ 
 public static Image BELKA = new ImageIcon("Belka.png").getImage();
 
 int x =0;
@@ -66,7 +65,6 @@ public void ruszBelkewPrawo(JPanel panel)
 Rectangle układ = panel.getBounds();
 
 x+=dx;
-    //System.out.println(x+dx);
 if(x + xBelki >= układ.getMaxX())
 {
 x = (int)układ.getMaxX() - xBelki;
